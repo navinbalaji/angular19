@@ -16,7 +16,7 @@ jobs:
         run: npm install
 
       - name: Build and package application
-        run: ng build --prod
+        run: npm run build --prod
 
       - name: Deploy to Apache2
         uses: appleboy/scp-action@v0.1.7
