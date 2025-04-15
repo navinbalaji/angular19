@@ -19,7 +19,7 @@ jobs:
         run: ng build --prod
 
       - name: Deploy to Apache2
-        uses: appleboy/scp-action@v1
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOSTINGER_HOST }}
           username: ${{ secrets.HOSTINGER_USER }}
